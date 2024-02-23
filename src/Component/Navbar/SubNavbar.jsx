@@ -84,11 +84,11 @@ const SubNavbar = () => {
 
     return (
         <motion.nav
-            className={`fixed top-0 left-0 w-full z-50 bg-[#441760] shadow-lg`}
+            className={`fixed top-0 left-0 w-full z-50 bg-[#149ECA] shadow-lg`}
             animate={controls}
             initial={{ opacity: 1, y: 0 }}
         >
-            <div className="container mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row justify-between items-center">
+            <div className=" container mx-auto py-3 flex flex-col md:flex-row justify-between items-center">
                 <motion.div
                     className="flex items-center gap-14"
                     initial={{ opacity: 0, x: -50 }}
