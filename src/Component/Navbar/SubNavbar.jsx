@@ -90,7 +90,7 @@ const SubNavbar = () => {
         >
             <div className=" container mx-auto py-3 flex flex-col md:flex-row justify-between items-center">
                 <motion.div
-                    className="flex items-center gap-14"
+                    className="flex items-center gap-20"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}

@@ -3,7 +3,7 @@ export const mySkill = [
 
     {
       "title": "Front-end",
-      "icons": '/src/assest/design-m4j9yZr3.png',
+      "icons": '/design-m4j9yZr3.png',
       "skills": [
         { "skill": "HTML", "percentage": "90%" },
         { "skill": "CSS", "percentage": "80%" },
@@ -15,7 +15,7 @@ export const mySkill = [
     },
     {
       "title": "Back-end",
-      "icons": "/png-transparent-front-and-back-ends-computer-icons-front-end-web-development-programing-miscellaneous-angle-text__1_-removebg-preview.png",
+      "icons": "/frontend-0K9HcPFn.png",
       "skills": [
         { "skill": "Node.js", "percentage": "60%" },
         { "skill": "Express.js", "percentage": "65%" },
@@ -40,10 +40,10 @@ export const mySkill = [
         "title": "Soft Skill",
         "icons": "/soft-skills-MQ4lw-5A.png",
         "skills": [
-            { "name": "Communication", "percentage": "80%" },
-            { "name": "Problem Solving", "percentage": "70%" },
-            { "name": "Creativity", "percentage": "80%" },
-            { "name": "Hard work", "percentage": "90%" }
+            { "skill": "Communication", "percentage": "80%" },
+            { "skill": "Problem Solving", "percentage": "70%" },
+            { "skill": "Creativity", "percentage": "80%" },
+            { "skill": "Hard work", "percentage": "90%" }
           ]
     }
    

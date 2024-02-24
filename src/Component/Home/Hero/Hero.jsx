@@ -7,6 +7,7 @@ import Node from '../../../assest/Node.png';
 import express from '../../../assest/Express.png';
 import Mogodb from '../../../assest/mongodb.png';
 import img1 from '../../../assest/Firefly 20240221011537 (1).png';
+
 import { Typewriter } from 'react-simple-typewriter';
 
 
@@ -31,7 +32,7 @@ const Hero = () => {
                 <p>Passionate MERN Stack Developer | Transfroming ideas into seamless and
                     Visually Stunnig Web Solutions.
                 </p>
-                <div className=' space-x-0 md:space-x-2 gap-4'>
+                <div className=' space-y-5 md:space-x-2 gap-4 md:flex '>
                     <button className='btn'>Project--</button>
                     <button className='btn2'>Contact--</button>
                 </div>

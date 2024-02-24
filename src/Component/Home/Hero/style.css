@@ -24,6 +24,7 @@
 .hero_container::before{
     bottom: 2rem;
     right: 0rem;
+    background-color:#9e51b9 ;
 }
 .hero-content{
     flex: 1;
@@ -135,20 +136,15 @@
         margin-top: 3rem;
         text-align: center;
         width: auto;
+        font-size: 3rem;
     }
     .hero-content p {
         text-align: center;
-        width: auto;
+        width: 95%;
         padding: 4px 2px;
+        margin-bottom: 5px;
     }
-    .btn{
-        margin-top: 20px;
-        background: #149ECA;
-        padding: 10px 60px;
-        border-radius: 10px;
-        font-size: 2rem;
-        font-weight: 600;
-    }
+
     .hero_container::after,
     .hero_container::before{
         content: "";
@@ -164,11 +160,15 @@
         left: 3rem;
     }
     .btn2{
-        width: 100%;
+        width: 95%;
+        margin: 0px 10px;
     }
     .btn{
-        width: 100%;
-        margin-left: 1px;
+       width: 95%;
+       margin: 0px 10px;
+    }
+    .hero-img{
+        margin: 0px 10px;
     }
     
 
