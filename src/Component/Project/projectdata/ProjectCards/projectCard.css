@@ -3,7 +3,7 @@
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
     padding: 1.5rem;
-    height: 480px;
+    height: 490px;
     margin: 0 5px;
 }
 .project-card h6{
@@ -28,6 +28,7 @@
 @media (max-width:768px) {
     .project-card{
         margin: 0px 10px;
+        height: 510px;
     }
     
 }

@@ -13,8 +13,8 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
     return (
-        <section className="hero_container">
-            <div className='hero-content'>
+        <section className="hero_containerse">
+            <div className='hero-contentse'>
                 <h2 className=' text-gray-400'>
                     HI, I`m Junayet Shiblu. J.r MERN Stack {' '}
                     <span style={{ color: '#149ECA', fontWeight: 'bold' }}>
@@ -33,7 +33,7 @@ const Hero = () => {
                     Visually Stunnig Web Solutions.
                 </p>
                 <div className=' space-y-5 md:space-x-2 gap-4 md:flex '>
-                    <button className='btn'>Project--</button>
+                    <button className='btn1'>Project--</button>
                     <button className='btn2'>Contact--</button>
                 </div>
             </div>
@@ -42,7 +42,7 @@ const Hero = () => {
                     <div className='tech-img'>
                         <Image src={Mogodb} height={80} alt='mongodb' width={80}></Image>
                     </div>
-                    <Image className=' rounded-xl' src={img1} height={250} alt='junayet' width={250}></Image>
+                    <Image className=' rounded-xl ' src={img1} height={250} alt='junayet' width={250}></Image>
                 </div>
                 <div>
                     <div className='tech-img'>

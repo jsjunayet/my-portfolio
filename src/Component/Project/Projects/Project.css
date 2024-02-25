@@ -29,16 +29,39 @@
     font-size: 2rem;
     font-weight: 500;
 }
+.arrow-left:hover{
+    background:#2b0ae8;
+}
+.arrow-right:hover{
+    background:#2b0ae8;
+}
 .arrow-left{
     left:98.5%;
 }
 @media (max-width:768px) {
+    .arrow-left,
+    .arrow-right{
+        position: absolute;
+        top:100%;
+        left: 10%;
+        z-index: 2;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
     .arrow-left{
-        left:94%;
+        left:82.5%;
+    }
+    .arrow-left:hover{
+        background:#2b0ae8;
+    }
+    .arrow-right:hover{
+        background: #2b0ae8;
     }
     .project-container h5{
         margin-left: 10px;
         margin-right: 10px;
+        text-align: center;
+        margin-bottom: 2rem;
     }
     
 }

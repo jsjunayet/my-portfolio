@@ -1,11 +1,30 @@
-import React from 'react';
+"use client"
+import React, { useEffect } from 'react';
 import './style.css'
+import ContactCard from '../ContactCard/ContactCard';
+import ContactFrom from '../ContactFrom/ContactFrom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Contact = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
-        <div>
-            hello contact
-        </div>
+        <section className='Contact-container'>
+            <h5>Contact Me</h5>
+            <div className='contact-content'>
+                <div data-aos="fade-right" data-aos-delay="100" className='left' >
+                    {/* <ContactCard iconURL='/mail.png' Text="junayetshiblu0@gmail.com" ></ContactCard> */}
+                    <ContactCard link='https://github.com/jsjunayet' iconURL="/github.png" Text="jsjunayet" ></ContactCard>
+                    <ContactCard link='https://www.linkedin.com/in/jsjunayet/' iconURL='/linkedin.png' Text='Junayet Shiblu' ></ContactCard>
+                </div>
+                <div data-aos="fade-left" className='right'>
+                    <ContactFrom></ContactFrom>
+                </div>
+            </div>
+        </section>
     );
 };
 
