@@ -3,8 +3,16 @@
     border-radius: 0.65rem;
     border: 1.5px solid #6751b9;
     padding: 1.5rem;
-    height: 490px;
+    height: 480px;
     margin: 0 5px;
+
+}
+.Contaner-img {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 200px; 
+    margin-bottom: 20px; 
 }
 .project-card h6{
     font-size: 1.2rem;
@@ -28,7 +36,8 @@
 @media (max-width:768px) {
     .project-card{
         margin: 0px 10px;
-        height: 510px;
+        height: 550px;
+        overflow: hidden;
     }
     
 }

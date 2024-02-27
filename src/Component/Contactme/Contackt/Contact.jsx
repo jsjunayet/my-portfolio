@@ -13,14 +13,15 @@ const Contact = () => {
     }, []);
     return (
         <section className='Contact-container'>
-            <h5>Contact Me</h5>
+            <h5 className=' mt-4 lg:mt-0'>Contact Information</h5>
+
             <div className='contact-content'>
-                <div data-aos="fade-right" data-aos-delay="100" className='left' >
+                <div data-aos="fade-up" data-aos-delay="100" className='left' >
                     {/* <ContactCard iconURL='/mail.png' Text="junayetshiblu0@gmail.com" ></ContactCard> */}
                     <ContactCard link='https://github.com/jsjunayet' iconURL="/github.png" Text="jsjunayet" ></ContactCard>
                     <ContactCard link='https://www.linkedin.com/in/jsjunayet/' iconURL='/linkedin.png' Text='Junayet Shiblu' ></ContactCard>
                 </div>
-                <div data-aos="fade-left" className='right'>
+                <div data-aos="fade-up" className='right'>
                     <ContactFrom></ContactFrom>
                 </div>
             </div>

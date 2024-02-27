@@ -26,13 +26,14 @@ const Education = () => {
                         <p>
                             Currently I am studying B.Sc in CSE at National Institute of Textile Engineering and Research located at Nayarhat, Savar, Dhaka.
                         </p>
+                        <time>CGPA: 3.18</time>
                     </div>
                     <hr />
                 </li>
                 <li data-aos="fade-up" data-aos-delay="100">
                     <hr />
                     <div className="timeline-middle">
-                        <Image className='bg-white rounded' src="/colloges.png " alt='niter' width={25} height={25}></Image>
+                        <Image className='bg-white rounded' src="/colloges.png" alt='niter' width={25} height={25}></Image>
                     </div>
                     <div className="timeline-end  Alldesgin">
                         <time className="font-mono italic">2019-2021</time>
@@ -45,6 +46,7 @@ const Education = () => {
                             University
                             located at saydabad, kasba, Brahmanbaria.
                         </p>
+                        <time>GPA: 5.00</time>
                     </div>
                     <hr />
                 </li>
@@ -62,6 +64,7 @@ const Education = () => {
                             I completed SSC from Shikarpur High School
                             located at Shikarpur, kasba, Brahmanbaria.
                         </p>
+                        <time>GPA: 4.44</time>
                     </div>
                     <hr />
                 </li>
@@ -79,6 +82,7 @@ const Education = () => {
                             I completed JSC from Shikarpur High School
                             located at Shikarpur, kasba, Brahmanbaria.
                         </p>
+                        <time>CGPA: 4.70</time>
                     </div>
                     <hr />
                 </li>

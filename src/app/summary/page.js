@@ -1,11 +1,12 @@
+import Education from '@/Component/Education/Education';
 import React from 'react';
 
-const Service = () => {
+const Summary = () => {
     return (
-        <div>
-            <h1>there are six season in bangladesh</h1>
+        <div className='pt-20 max-w-7xl mx-auto'>
+            <Education></Education>
         </div>
     );
 };
 
-export default Service;
+export default Summary;

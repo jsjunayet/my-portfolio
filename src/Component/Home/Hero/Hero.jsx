@@ -6,9 +6,9 @@ import Reacts from '../../../assest/React.png';
 import Node from '../../../assest/Node.png';
 import express from '../../../assest/Express.png';
 import Mogodb from '../../../assest/mongodb.png';
-import img1 from '../../../assest/Firefly 20240221011537 (1).png';
 
 import { Typewriter } from 'react-simple-typewriter';
+import Link from 'next/link';
 
 
 const Hero = () => {
@@ -32,9 +32,9 @@ const Hero = () => {
                 <p>Passionate MERN Stack Developer | Transfroming ideas into seamless and
                     Visually Stunnig Web Solutions.
                 </p>
-                <div className=' space-y-5 md:space-x-2 gap-4 md:flex '>
-                    <button className='btn1'>Project--</button>
-                    <button className='btn2'>Contact--</button>
+                <div className='  gap-4 md:flex  items-center '>
+                    <Link href={'/service'}><button className='btn2'>Project--</button></Link>
+                    <Link href={'/contact'}><button className='btn2'>Contact--</button></Link>
                 </div>
             </div>
             <div className='hero-img'>
@@ -42,7 +42,7 @@ const Hero = () => {
                     <div className='tech-img'>
                         <Image src={Mogodb} height={80} alt='mongodb' width={80}></Image>
                     </div>
-                    <Image className=' rounded-xl ' src={img1} height={250} alt='junayet' width={250}></Image>
+                    <Image className=' rounded-xl ' src={'/junayet.png'} height={250} alt='junayet' width={250}></Image>
                 </div>
                 <div>
                     <div className='tech-img'>

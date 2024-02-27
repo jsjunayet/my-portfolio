@@ -1,11 +1,12 @@
+import Skill from '@/Component/Skill/skills/Skill';
 import React from 'react';
 
-const Skill = () => {
+const Skills = () => {
     return (
-        <div>
-            this is skill page
+        <div className=' max-w-7xl mx-auto'>
+            <Skill></Skill>
         </div>
     );
 };
 
-export default Skill;
+export default Skills;

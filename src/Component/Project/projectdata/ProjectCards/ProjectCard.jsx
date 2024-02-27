@@ -7,7 +7,7 @@ const ProjectCard = ({ details }) => {
 
     return (
         <div className='project-card'>
-            <Image src={details.img} alt='img' height={300} width={400}></Image>
+            <div className='Contaner-img'> <Image src={details.img} alt='img' height={300} width={400}></Image></div>
             <div>
                 <h6>{details.title}</h6>
                 <div>
