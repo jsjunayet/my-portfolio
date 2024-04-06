@@ -7,8 +7,8 @@ import Link from "next/link";
 import NavLink from "./NavLink ";
 import { MdCastForEducation, MdMedicalServices, MdOutlineContactPhone } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
-
-
+import { MdLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 
 const SubNavbar = () => {
     const Links = [
@@ -90,20 +90,21 @@ const SubNavbar = () => {
         >
             <div className=" container mx-auto py-3 flex flex-col md:flex-row justify-between items-center">
                 <motion.div
-                    className="flex items-center  justify-between"
+                    className="flex items-center justify-between"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
                 >
                     <Link
                         href="/"
-                        className="font-bold  text-2xl flex items-center font-[Poppins] text-white"
+                        className="font-bold mr-5  text-2xl flex items-center font-[Poppins] text-white"
                     >
                         <span className="text-3xl text-indigo-600 mr-2">
                             <ion-icon name="logo-ionic"></ion-icon>
                         </span>
                         JUNAYET | <span className=" text-gray-600 ml-1">SHIBLU</span>
                     </Link>
+                    <MdLightMode className="text-xl block md:hidden" />
                     <div className="md:hidden ml-2">
                         <motion.div
                             onClick={() => setOpen(!open)}
@@ -136,6 +137,7 @@ const SubNavbar = () => {
                             <NavLink href={link.path} icon={link.icon} title={link.title} />
                         </motion.li>
                     ))}
+                    <MdLightMode className="text-xl md:block hidden" />
                 </ul>
             </div>
         </motion.nav>
