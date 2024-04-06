@@ -7,7 +7,7 @@ const Service = () => {
     return (
         <div className='py-20 max-w-7xl mx-auto '>
             <h1 className='text-2xl font-semibold my-8 text-center md:text-start'>My Project</h1>
-            <div className='grid gap-y-4 grid-cols-1 gap-x-2 md:grid-cols-2 '>
+            <div className='grid gap-y-4 grid-cols-1 gap-x-2 md:grid-cols-3 '>
                 {
                     Services.map((item)=><ProjectCard key={item.title} details={item}></ProjectCard>)
                 }

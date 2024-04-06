@@ -10,6 +10,7 @@ import { GiSkills } from "react-icons/gi";
 import { MdLightMode } from "react-icons/md";
 import { MdOutlineDarkMode } from "react-icons/md";
 import { ThemContext } from "../Context/ThemContext";
+import { GrAchievement } from "react-icons/gr";
 
 const SubNavbar = () => {
     const Links = [
@@ -48,7 +49,8 @@ const SubNavbar = () => {
             path: "/contact",
             title: "Contact",
             icon: <MdOutlineContactPhone />,
-        }
+        },
+
     ];
 
 

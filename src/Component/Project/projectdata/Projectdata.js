@@ -1,5 +1,12 @@
 export const projectdatas= [
     {
+      title: "Digital Voting System",
+      img: "/dvs.png",
+      githubLink: "https://github.com/dreamwarrior6m/Electronic-Voting-System",
+      liveLink: "https://electronic-voting-system-beta.vercel.app/",
+      description:  "You need a system for managing elections and polls with user roles, a chatbot for engagement, and notifications for event update and secure authentication using Nextjs, MongoDB, Express, Node, Firebase, Tailwind, and JWT.",
+    },
+    {
       title: "Employee Management System",
       img: "/img1.png",
       githubLink: "https://github.com/jsjunayet/Employed-management-client",
