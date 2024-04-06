@@ -1,13 +1,15 @@
 "use client"
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './style.css'
 import ContactCard from '../ContactCard/ContactCard';
 import ContactFrom from '../ContactFrom/ContactFrom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ThemContext } from '@/Component/Context/ThemContext';
 
 
 const Contact = () => {
+
     useEffect(() => {
         AOS.init();
     }, []);

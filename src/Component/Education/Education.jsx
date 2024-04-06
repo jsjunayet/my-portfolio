@@ -1,18 +1,20 @@
 "use client"
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Image from 'next/image';
 import './Education.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ThemContext } from '../Context/ThemContext';
 
 const Education = () => {
+    const { Light } = useContext(ThemContext)
     useEffect(() => {
         AOS.init();
     }, []);
     return (
         <div className='main_content'>
             <h5>Educational qualifications</h5>
-            <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+            <ul className={`timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ${Light == "light" ? "text-gray-300" : ""}`}>
                 <li data-aos="fade-up">
                     <div className="timeline-middle">
                         <Image className='bg-white rounded' src="/niter.png" alt='niter' width={25} height={25}></Image>

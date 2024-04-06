@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useContext } from 'react';
 import style from './style.css';
 import Image from 'next/image';
 import Reacts from '../../../assest/React.png';
@@ -9,13 +9,15 @@ import Mogodb from '../../../assest/mongodb.png';
 
 import { Typewriter } from 'react-simple-typewriter';
 import Link from 'next/link';
+import { ThemContext } from '@/Component/Context/ThemContext';
 
 
 const Hero = () => {
+    const { Light } = useContext(ThemContext)
     return (
         <section className="hero_containerse">
             <div className='hero-contentse'>
-                <h2 className=' text-gray-400'>
+                <h2 className={` ${Light == "text-gray-900" ? "" : "text-gray-400"}`}>
                     HI, I`m Junayet Shiblu. J.r MERN Stack {' '}
                     <span style={{ color: '#149ECA', fontWeight: 'bold' }}>
                         <Typewriter

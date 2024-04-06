@@ -1,12 +1,14 @@
-import React from 'react';
+"use client"
+import React, { useContext } from 'react';
 import './projectCard.css'
 import Image from 'next/image';
 import Link from 'next/link';
+import { ThemContext } from '@/Component/Context/ThemContext';
 
 const ProjectCard = ({ details }) => {
-
+    const { Light } = useContext(ThemContext)
     return (
-        <div className='project-card'>
+        <div className={`project-card ${Light == "light" ? " text-gray-300" : ""}`}>
             <div className='Contaner-img'> <Image src={details.img} alt='img' height={300} width={400}></Image></div>
             <div>
                 <h6>{details.title}</h6>

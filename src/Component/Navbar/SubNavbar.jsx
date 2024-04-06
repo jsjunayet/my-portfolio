@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { IoIosHome, IoIosCube, IoMdInformationCircle, IoMdList, IoIosConstruct } from "react-icons/io";
 import { FiMenu, FiX } from "react-icons/fi";
 import { motion, useAnimation } from "framer-motion";
@@ -9,6 +9,7 @@ import { MdCastForEducation, MdMedicalServices, MdOutlineContactPhone } from "re
 import { GiSkills } from "react-icons/gi";
 import { MdLightMode } from "react-icons/md";
 import { MdOutlineDarkMode } from "react-icons/md";
+import { ThemContext } from "../Context/ThemContext";
 
 const SubNavbar = () => {
     const Links = [
@@ -55,6 +56,10 @@ const SubNavbar = () => {
     const [open, setOpen] = useState(false);
     const controls = useAnimation();
     const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const { Light, setLight } = useContext(ThemContext)
+    const handleClick = () => {
+        setLight((prev) => prev == "light" ? "dark" : "light")
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -84,7 +89,7 @@ const SubNavbar = () => {
 
     return (
         <motion.nav
-            className={`fixed top-0 left-0 w-full z-50 bg-[#149ECA] shadow-lg`}
+            className={`fixed top-0 left-0 w-full z-50 ${Light == "light" ? " bg-[#060417]" : "bg-[#149ECA]"}  shadow-lg`}
             animate={controls}
             initial={{ opacity: 1, y: 0 }}
         >
@@ -102,9 +107,11 @@ const SubNavbar = () => {
                         <span className="text-3xl text-indigo-600 mr-2">
                             <ion-icon name="logo-ionic"></ion-icon>
                         </span>
-                        JUNAYET | <span className=" text-gray-600 ml-1">SHIBLU</span>
+                        JUNAYET | <span className={` ml-1 ${Light == "light" ? "text-[#149ECA]" : "text-gray-600"} `}>SHIBLU</span>
                     </Link>
-                    <MdLightMode className="text-xl block md:hidden" />
+                    {
+                        Light == "light" ? <MdLightMode onClick={handleClick} className="text-xl block md:hidden text-white" /> : <MdOutlineDarkMode onClick={handleClick} className="text-xl block md:hidden" />
+                    }
                     <div className="md:hidden ml-2">
                         <motion.div
                             onClick={() => setOpen(!open)}
@@ -137,7 +144,9 @@ const SubNavbar = () => {
                             <NavLink href={link.path} icon={link.icon} title={link.title} />
                         </motion.li>
                     ))}
-                    <MdLightMode className="text-xl md:block hidden" />
+                    {
+                        Light == "light" ? <MdLightMode onClick={handleClick} className="text-xl md:block hidden text-white" /> : <MdOutlineDarkMode onClick={handleClick} className="text-xl md:block hidden" />
+                    }
                 </ul>
             </div>
         </motion.nav>
