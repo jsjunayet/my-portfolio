@@ -6,7 +6,7 @@ const Hire = () => {
     const { Light } = useContext(ThemContext)
     return (
         <div className='md:ml-2 ml-0 mt-5 md:mt-10'>
-            <h1 className='md:text-2xl text-lg text-center md:text-start font-semibold md:mb-10 mb-4'>Why would you hire me?</h1>
+            <h1 className='md:text-xl text-lg text-center md:text-start font-semibold md:mb-10 mb-4'>Why would you hire me?</h1>
             <div className=' mx-2 md:mx-0'>
             <div className={`collapse collapse-plus mb-5 ${Light == "light" ? "bg-[#16112F65]" : "bg-[#149ECA]"} `}>
                 <input type="radio" name="my-accordion-3" defaultChecked />

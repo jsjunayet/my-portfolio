@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import { GrUserAdmin } from "react-icons/gr";
+import { MdEmail } from "react-icons/md";
 
 const ProjectCard = ({ details }) => {
   const [hover, setHover] = useState(false);
@@ -36,14 +38,18 @@ const ProjectCard = ({ details }) => {
               alt={`${details.title}-${index}`}
               width={400}
               height={200}
-              className={`w-full md:h-48 p-1 h-full object-cover transition-transform duration-300 ${hover ? 'scale-105 opacity-70' : 'scale-100 opacity-100'}`}
+              className={`w-full md:h-40 p-1 h-full object-cover transition-transform duration-300 ${hover ? 'scale-105 opacity-70' : 'scale-100 opacity-100'}`}
             />
           </div>
         ))}
       </Slider>
       <div className="p-6">
         <h2 className="md:text-[16px] text-base font-semibold text-white mb-2">{details.title}</h2>
-        <p className="text-gray-300 md:text-xs text-[12px] mb-4">{details.description}</p>
+        <p className="text-gray-300 md:text-xs text-[12px] mb-1">{details.description}</p>
+        <div className='flex justify-between items-center mb-1'>
+          <p className='flex gap-[1px] font-medium text-[11px] text-[#149ECA] items-center'><MdEmail />: {details.AdminEmail}</p>
+          <p className='flex gap-[1px] font-medium text-[11px] text-[#149ECA] items-center'><GrUserAdmin />: {details.password}</p>
+        </div>
         <div className="flex justify-between items-center">
           <a href={details.githubLink} target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:underline">
             View Code
