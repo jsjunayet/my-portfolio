@@ -36,7 +36,7 @@ const ProjectCard = ({ details }) => {
               alt={`${details.title}-${index}`}
               width={400}
               height={200}
-              className={`w-full md:h-48 p-1 h-full object-cover transition-transform duration-300 ${hover ? 'scale-105' : 'scale-100'}`}
+              className={`w-full md:h-48 p-1 h-full object-cover transition-transform duration-300 ${hover ? 'scale-105 opacity-70' : 'scale-100 opacity-100'}`}
             />
           </div>
         ))}
