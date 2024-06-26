@@ -28,27 +28,9 @@ const SubNavbar = () => {
         },
         {
             id: 3,
-            path: "/skill",
-            title: "Skill",
-            icon: <GiSkills />,
-        },
-        {
-            id: 4,
-            path: "/summary",
-            title: "Summary",
-            icon: <MdCastForEducation />,
-        },
-        {
-            id: 5,
             path: "/service",
             title: "Service",
             icon: <MdMedicalServices />,
-        },
-        {
-            id: 6,
-            path: "/contact",
-            title: "Contact",
-            icon: <MdOutlineContactPhone />,
         },
 
     ];
@@ -95,7 +77,7 @@ const SubNavbar = () => {
             animate={controls}
             initial={{ opacity: 1, y: 0 }}
         >
-            <div className=" container mx-auto py-3 flex flex-col md:flex-row justify-between items-center">
+            <div className="max-w-5xl mx-auto py-3 flex flex-col md:flex-row justify-between items-center">
                 <motion.div
                     className="flex items-center justify-between"
                     initial={{ opacity: 0, x: -50 }}

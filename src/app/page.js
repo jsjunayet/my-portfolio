@@ -10,7 +10,7 @@ import Hire from '@/Component/hire/Hire';
 const Home = () => {
   return (
     <>
-    <div className='pt-20 container mx-auto'>
+    <div className='pt-10 md:pt-20 max-w-5xl mx-auto'>
       <Hero></Hero>
       <Skill></Skill>
       <Education></Education>
