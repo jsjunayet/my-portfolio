@@ -1,71 +1,42 @@
 export const projectdatas= [
     {
-      title: "Digital Voting System",
+      title: "Online Food - Restaurant Website",
       img: [
-        "/project3.png",
-        "/project5.png",
-        "/project4.png"
+        "/hotel.png",
+        "/hotel1.png",
+        "/hotel2.png",
+        "/hotel3.png",
+        "/hotel4.png",
+        "/hotel5.png",
+        "/hotel6.png",
+      ],
+      githubLink: "https://github.com/jsjunayet/bistro-boss-clientsite",
+      liveLink: "https://incomparable-paprenjak-92812e.netlify.app/",
+      description: " Implemented dynamic routes, user search and price filtering, login redirects.Cart addition, SSLCommerz payments, PDF receipts, and profile item tracking.Dynamic admin dashboard, Full oversight, Responsive for all device, Secure by JWT.",
+
+    },
+    {
+      title: "Online Booking - Hotel Website",
+      img: [
+        "/res.png",
+        "/hotel9.jpg",
+        "/hote8.jpg"
+      ],
+      githubLink: "https://github.com/jsjunayet/bistro-boss-clientsite",
+      liveLink: "https://bookingwebsite-2.onrender.com",
+      description: " Dynamic menu, City & Date search, Price filter,Instant Availability, Dynamic Pricing Booking Summary &  Cancellation Policy in user profile, Responsive for all deviceComprehensive Dashboard, User Insights, Room Bookings, Admin Controls",
+
+    },
+    {
+      title: "DVS - Digital Voting System",
+      img: [
+        "/dvs.png",
+        "/dvs2.jpg",
+        "/dvs3.jpg"
       ],
       githubLink: "https://github.com/dreamwarrior6m/Electronic-Voting-System",
       liveLink: "https://electronic-voting-system-beta.vercel.app/",
       description:  "You need a system for managing elections and polls with user roles, a chatbot for engagement, and notifications for event update and secure authentication using Nextjs, MongoDB, Express, Node, Firebase, Tailwind, and JWT.",
-    },
-    {
-      title: "Employee Management System",
-      img: [
-        "/project3.png",
-        "/project5.png",
-        "/project4.png"
-      ],
-      githubLink: "https://github.com/jsjunayet/Employed-management-client",
-      liveLink: "https://splendid-stardust-cf0114.netlify.app/",
-      description:  "Employee Management System with roll-based dashboard, HR verification, payment system, and secure authentication using React, MongoDB, Express, Node, Firebase, Tailwind, and JWT.",
-    },
-    {
-      title: "Bistro Boss - Restaurant Website",
-      img: [
-        "/project3.png",
-        "/project5.png",
-        "/project4.png"
-      ],
-      githubLink: "https://github.com/jsjunayet/bistro-boss-clientsite",
-      liveLink: "https://incomparable-paprenjak-92812e.netlify.app/",
-      description: "Bistro Boss - Restaurant Website featuring roll-based authentication, admin tools, secure server with JWT, and user-friendly food ordering. Built with React, MongoDB, Express, Node, Firebase, Tailwind, and JWT.",
-
-    },
-    {
-      title: "Digital Voting System",
-      img: [
-        "/project3.png",
-        "/project5.png",
-        "/project4.png"
-      ],
-      githubLink: "https://github.com/dreamwarrior6m/Electronic-Voting-System",
-      liveLink: "https://electronic-voting-system-beta.vercel.app/",
-      description:  "You need a system for managing elections and polls with user roles, a chatbot for engagement, and notifications for event update and secure authentication using Nextjs, MongoDB, Express, Node, Firebase, Tailwind, and JWT.",
-    },
-    {
-      title: "Employee Management System",
-      img: [
-        "/project3.png",
-        "/project5.png",
-        "/project4.png"
-      ],
-      githubLink: "https://github.com/jsjunayet/Employed-management-client",
-      liveLink: "https://splendid-stardust-cf0114.netlify.app/",
-      description:  "Employee Management System with roll-based dashboard, HR verification, payment system, and secure authentication using React, MongoDB, Express, Node, Firebase, Tailwind, and JWT.",
-    },
-    {
-      title: "Bistro Boss - Restaurant Website",
-      img: [
-        "/project3.png",
-        "/project5.png",
-        "/project4.png"
-      ],
-      githubLink: "https://github.com/jsjunayet/bistro-boss-clientsite",
-      liveLink: "https://incomparable-paprenjak-92812e.netlify.app/",
-      description: "Bistro Boss - Restaurant Website featuring roll-based authentication, admin tools, secure server with JWT, and user-friendly food ordering. Built with React, MongoDB, Express, Node, Firebase, Tailwind, and JWT.",
-
     }
   ];
   
