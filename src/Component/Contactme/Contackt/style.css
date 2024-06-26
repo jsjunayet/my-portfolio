@@ -1,11 +1,11 @@
 .Contact-container{
-    
-    
+    margin-top: 30px;
+    margin-left: 15px;
 }
 .Contact-container h5{
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 4rem;
+    margin-bottom: 30px;
 }
 .contact-content{
     display: flex;

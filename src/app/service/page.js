@@ -3,19 +3,20 @@ import ProjectCard from '@/Component/Project/projectdata/ProjectCards/ProjectCar
 import React from 'react';
 import './service.css'
 import Link from 'next/link';
+import { projectdatas } from '@/Component/Project/projectdata/Projectdata';
 const Service = () => {
     return (
-        <div className='py-20 max-w-7xl mx-auto '>
-            <h1 className='text-2xl font-semibold my-8 text-center md:text-start'>My Project</h1>
-            <div className='grid gap-y-4 grid-cols-1 gap-x-2 md:grid-cols-3 '>
+        <div className='py-12 max-w-5xl mx-auto '>
+            <h1 className='text-xl font-semibold my-5 ml-5 md:ml-0 text-center md:text-start'>My Project</h1>
+            <div className='grid grid-cols-1 gap-2 md:grid-cols-3 '>
                 {
-                    Services.map((item)=><ProjectCard key={item.title} details={item}></ProjectCard>)
+                    projectdatas.map((item)=><ProjectCard key={item.title} details={item}></ProjectCard>)
                 }
             </div>
             <div class="pricing">
             <div class="pricing">
     <h2 class="pricing-title">PRICING</h2>
-    <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10'>
     <div class='box'>
         <h1 class='box-title'>Basic</h1>
         <div class="box-details">

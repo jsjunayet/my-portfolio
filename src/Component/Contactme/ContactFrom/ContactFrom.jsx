@@ -28,7 +28,8 @@ const ContactFrom = () => {
             });
     };
     return (
-        <div className='contact-from'>
+        <div className='md:mx-0 mx-2'>
+            <div className='contact-from '>
             <form ref={form} onSubmit={sendEmail}>
                 <div className='name-contaner'>
                     <input name="to_name" required type="text" placeholder='First Name' />
@@ -39,6 +40,7 @@ const ContactFrom = () => {
                 <button>Send</button>
             </form>
 
+        </div>
         </div>
     );
 };

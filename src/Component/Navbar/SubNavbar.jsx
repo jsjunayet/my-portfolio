@@ -77,9 +77,9 @@ const SubNavbar = () => {
             animate={controls}
             initial={{ opacity: 1, y: 0 }}
         >
-            <div className="max-w-5xl mx-auto py-3 flex flex-col md:flex-row justify-between items-center">
+            <div className="max-w-5xl  mx-auto py-3 flex flex-col md:flex-row justify-between items-center">
                 <motion.div
-                    className="flex items-center justify-between"
+                    className="flex ml-2 md:ml-0 items-center justify-between"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
@@ -88,7 +88,7 @@ const SubNavbar = () => {
                         href="/"
                         className="font-bold mr-5  text-2xl flex items-center font-[Poppins] text-white"
                     >
-                        <span className="text-3xl text-indigo-600 mr-2">
+                        <span className="md:text-3xl text-2xl text-indigo-600 mr-2">
                             <ion-icon name="logo-ionic"></ion-icon>
                         </span>
                         JUNAYET | <span className={` ml-1 ${Light == "light" ? "text-[#149ECA]" : "text-gray-600"} `}>SHIBLU</span>

@@ -12,8 +12,8 @@ const Education = () => {
         AOS.init();
     }, []);
     return (
-        <div className='main_content'>
-            <h5>Educational qualifications</h5>
+        <div className='relative md:ml-2 ml-0 mt-6 md:mt-20 mx-2 md:mx-0'>
+            <h5 className='md:text-xl text-lg text-center md:text-start font-semibold md:mb-10 mb-4'>Educational qualifications</h5>
             <ul className={`timeline timeline-snap-icon max-md:timeline-compact timeline-vertical ${Light == "light" ? "text-gray-300" : ""}`}>
                 <li data-aos="fade-up">
                     <div className="timeline-middle">

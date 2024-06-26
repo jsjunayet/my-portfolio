@@ -13,8 +13,8 @@ const Skill = () => {
         setselectedskill(data)
     }
     return (
-        <section className='skills-container'>
-            <h5>Technical Proficiecy</h5>
+        <section className='relative md:ml-2 ml-0 mt-6 md:mt-20'>
+            <h5 className='md:text-xl text-lg text-center md:text-start font-semibold md:mb-10 mb-4'>Technical Proficiecy</h5>
             <div className='Skills-content'>
                 <div className='skills'>
                     {

@@ -41,22 +41,14 @@ const Project = () => {
         slideRef.current.slickPrev()
     }
     return (
-        <div className='project-container'>
-            <h5>My Project</h5>
-            <div className='arrow-right' onClick={sliderRight}>
-                <span className='icons-1'><IoIosArrowBack /> </span>
-            </div>
-            <div className='arrow-left' onClick={sliderleft}>
-                <span className='icons-2'> <IoIosArrowForward /></span>
-            </div>
-            <div className='project-content'>
-                <Slider className=' h-full' ref={slideRef} {...settings}>
-                    {
+        <div className='md:ml-2 ml-0 mt-6 md:mt-20'>
+            <h5 className='md:text-xl text-lg text-center md:text-start font-semibold md:mb-5 mb-4'>My Project</h5>
+            <div className='grid md:grid-cols-2 gap-3 lg:grid-cols-3 grid-cols-1'>
+            {
                         projectdatas.map((item) => (
                             <ProjectCard key={item.title} details={item}> </ProjectCard>
                         ))
-                    }
-                </Slider>
+            }
             </div>
 
         </div>

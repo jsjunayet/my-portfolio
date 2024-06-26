@@ -10,7 +10,7 @@ const ContactCard = ({ iconURL, Text, link }) => {
     return (
         <div className='contact-card'>
             <div className='icons'>
-                <Link className=' cursor-pointer' href={link}><Image src={iconURL} alt={Text} height={50} width={50}></Image></Link>
+                <a className=' cursor-pointer' href={link} target='blank'><Image src={iconURL} alt={Text} height={50} width={50}></Image></a>
             </div>
             <p className={`footers ${Light == "light" ? " text-gray-300" : ""}`}>{Text}</p>
         </div>
