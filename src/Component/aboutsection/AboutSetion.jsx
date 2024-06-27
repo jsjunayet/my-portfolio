@@ -15,12 +15,12 @@ const AboutSetion = () => {
                                 Also I am studying computer science and engineering at National Institute of Textile Engineering and Research so my love for coding works differently.
                             </p> 
                             <div className='flex items-center md:gap-5 gap-5'>
-            <a className="flex gap-1 justify-center items-center mt-2  bg-[#16112F65] border-2 cursor-pointer border-[#149ECA] px-2 py-1 rounded transition hover:border-[#130f2a] hover:bg-[#149ECA] transform hover:scale-110" href='/Juanyet_Shiblu_MERN_Stack_Developer_resume.pdf' download>
+            <Link href={"/contact"} className="flex gap-1 justify-center items-center mt-2  bg-[#16112F65] border-2 cursor-pointer border-[#149ECA] px-2 py-1 rounded transition hover:border-[#130f2a] hover:bg-[#149ECA] transform hover:scale-110" >
                 CONTACT ME
-            </a>
+            </Link>
             <div className='flex gap-5 mt-2 justify-center items-center'>
             <div className='bg-[#16112F65] border-2 cursor-pointer border-[#149ECA] px-2 py-1 rounded transition hover:border-[#130f2a] hover:bg-[#149ECA] transform hover:scale-110'>
-             <a href='https://github.com/jsjunayet' target='blank'>MY PROJECT</a>
+             <Link href={"/about"}>MY PROJECT</Link>
                 </div>
               
             </div>
